@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <style>
+            [data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;} 
+            @keyframes slidy {
+                0% { left: 0%; }
+                20% { left: 0%; }
+                25% { left: -100%; }
+                45% { left: -100%; }
+                50% { left: -200%; }
+                70% { left: -200%; }
+                75% { left: -300%; }
+                95% { left: -300%; }
+                100% { left: -400%; }
+            }
+
+            body { margin: 0; } 
+            div#slider { overflow: hidden; }
+            div#slider figure img { width: 20%; float: left; }
+            div#slider figure { 
+              position: relative;
+              width: 500%;
+              margin: 0;
+              left: 0;
+              text-align: left;
+              font-size: 0;
+              animation: 30s slidy infinite; 
+            }
+        </style>
+    </head>
+    <body>
+        <div data-role="page" data-theme="b">
+            <div data-role="header" align="center">
+                <img src="images/logo-4.jpg" width="50" align="left"><img src="images/profile1.png" width="50" align="right">
+            </div>
+            <div data-role="main" class="ui-content" align="center">
+                <img src="images/sigiriya06.jpg" with="300">
+                <h1>Sigiriya</h1>
+                <p>Sigiriya (Lion Rock Sinhala: සීගිරිය, Tamil: சிகிரியா, pronounced see-gi-ri-yə) is an ancient palace located in the central Matale District near the town of Dambulla in the Central Province, Sri Lanka. The name refers to a site of historical and archaeological significance that is dominated by a massive column of rock nearly 200 metres (660 ft) high. According to the ancient Sri Lankan chronicle the Culavamsa, this site was selected by King Kasyapa (477 – 495 CE) for his new capital. He built his palace on the top of this rock and decorated its sides with colourful frescoes. On a small plateau about halfway up the side of this rock he built a gateway in the form of an enormous lion. The name of this place is derived from this structure —Sīhāgiri, the Lion Rock. The capital and the royal palace was abandoned after the king's death. It was used as a Buddhist monastery until the 14th century.</p>
+                <div id="slider">
+                    <figure>
+                        <img src="images/sigiriya1.jpg" alt="">
+                        <img src="images/sigiriya2.jpg" alt="">
+                        <img src="images/sigiriya3.jpg" alt="">
+                        <img src="images/sigiriya4.jpg" alt="">
+                        <img src="images/sigiriya5.jpg.jpg" alt="">
+                    </figure>
+                </div>
+            </div>
+            <div data-role="footer" align="center">
+                <a href="/profile.html" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-icon-home ui-btn-icon-notext ui-btn-b ui-mini">icon only button</a>
+                <a href="#" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-icon-camera ui-btn-icon-notext ui-btn-b ui-mini">icon only button</a>
+            </div>
+        </div>
+    </body>
+</html>
